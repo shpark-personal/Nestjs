@@ -40,8 +40,6 @@ export class UsersService {
     const user = this.users.find(
       (u) => u.id == loginData.id && u.password == loginData.password,
     )
-    console.log(this.users)
-    console.log(user)
     if (user === undefined) {
       return false
     } else {
